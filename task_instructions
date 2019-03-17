@@ -1,0 +1,3 @@
+1.choose5 images containing lines and rectangular structures. urban scenes buidilings, fences . 30 segments
+2.design and implement automatic detection of lines. RANSAC with least square fitting  or hough transform design and implement yourself
+3.automatic detection of rectangular structures. houses, windows, parts of car

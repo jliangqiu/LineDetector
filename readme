@@ -1,0 +1,12 @@
+Cotet Teodor-Mhai
+
+I have implemented an adapation of the RANSAC algorithm as following:
+
+    * apply gaussian blur and canny for edge detection (from opencv)
+    * take nr_samples (1000 is good for basic lines) pairs of 2 points and for each pair:
+        * find line equation
+        * decide the line is a inliar or outliar by couting the nr of points near the line
+            (param: if distance(point, line) < threshold_distance=1.9 -> point is on the line)
+            (param: threshold_points near the line -> the line is an inliar)
+        * split the line in many segments (param: max_diruption=4 between segments)
+        * check if the segments is already taken (by the 2 starting points)
